@@ -1,0 +1,10 @@
+{% extends "./base.html" %}
+{% block body %}
+	<div id="login-container">
+		<div id="login-card" >
+			{% include "./LogoWithText.svg" %}
+			<a id="login-btn" href="{% url 'social:begin' 'google-oauth2' %}">Login</a>
+			<p id="login-subtitle">with your Berkeley email</p>
+		</div>
+	</div>
+{% endblock %}
